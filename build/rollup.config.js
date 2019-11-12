@@ -14,7 +14,6 @@ const config = {
     exports: "named"
   },
   plugins: [
-    external,
     replace({
       "process.env.NODE_ENV": JSON.stringify("production")
     }),

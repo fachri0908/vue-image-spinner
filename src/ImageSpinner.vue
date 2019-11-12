@@ -9,9 +9,8 @@
 </template>
 
 <script>
-import { setTimeout } from "timers";
 export default {
-  name: "SimpleAlert",
+  name: "ImageSpinner",
   props: {
     message: {
       type: String,
@@ -23,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
     .spinner-container{
         position: fixed; /* Sit on top of the page content */
         width: 100%; /* Full width (cover the whole page) */
