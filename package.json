@@ -1,6 +1,6 @@
 {
   "name": "vue-image-spinner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/vue-image-spinner.umd.js",
   "module": "dist/vue-image-spinner.esm.js",
   "unpkg": "dist/vue-image-spinner.min.js",

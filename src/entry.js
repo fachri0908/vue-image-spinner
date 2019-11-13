@@ -1,26 +1,16 @@
-import component from "./ImageSpinner.vue";
+import BreathingSpinner from './BreathingSpinner.vue'
+import RotatingSpinner from './RotatingSpinner.vue'
+import JumpingSpinner from './JumpingSpinner.vue'
+import LinearRotatingSpinner from './LinearRotatingSpinner.vue'
 
-function install(Vue) {
-  if (install.installed) return;
-  install.installed = true;
-  Vue.component("ImageSpinner", component);
+
+export default {
+    install (Vue) {
+        Vue.component('BreathingSpinner', BreathingSpinner)
+        Vue.component('RotatingSpinner', RotatingSpinner)
+        Vue.component('JumpingSpinner', JumpingSpinner)
+        Vue.component('LinearRotatingSpinner', LinearRotatingSpinner)
+    }
 }
 
-const plugin = {
-  install
-};
-
-let GlobalVue = null;
-if (typeof window !== "undefined") {
-  GlobalVue = window.Vue;
-} else if (typeof global !== "undefined") {
-  GlobalVue = global.vue;
-}
-
-if (GlobalVue) {
-  GlobalVue.use(plugin);
-}
-
-component.install = install;
-
-export default component;
+export { BreathingSpinner, RotatingSpinner, JumpingSpinner, LinearRotatingSpinner }
