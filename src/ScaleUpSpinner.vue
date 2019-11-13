@@ -3,7 +3,7 @@
         <div :style="spinnerContainer()" class="spinner-container">
             <div :style="spinner()" class="spinner">
                 <img
-                    class="image jumping"
+                    class="image scale-up"
                     :style="imageStyles()"
                     :src="src">
             </div>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "JumpingSpinner",
+  name: "ScaleUpSpinner",
   props: {
     src: {
       type: String,
@@ -77,21 +77,37 @@ export default {
         z-index: 999;
         transform: translate(-50%, -50%);
     }
-    .jumping {
-        -webkit-animation: mover 0.7s infinite  alternate;
-        animation: mover 0.7s infinite  alternate;
+    .scale-up {
+        -webkit-animation: rotate-scale-up 1s both infinite;
+	    animation: rotate-scale-up 1s both infinite;
     }
-    .jumping {
-        -webkit-animation: mover 0.7s infinite  alternate;
-        animation: mover 0.7s infinite  alternate;
+    @-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+                transform: scale(1) rotateZ(0);
     }
-    @-webkit-keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-15px); }
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+                transform: scale(2) rotateZ(180deg);
     }
-    @keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-15px); }
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+                transform: scale(1) rotateZ(360deg);
     }
+    }
+    @keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+                transform: scale(1) rotateZ(0);
+    }
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+                transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+                transform: scale(1) rotateZ(360deg);
+    }
+}
 </style>
 
