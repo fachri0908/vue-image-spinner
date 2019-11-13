@@ -4,7 +4,6 @@ import JumpingSpinner from './JumpingSpinner.vue'
 import LinearRotatingSpinner from './LinearRotatingSpinner.vue'
 import ScaleUpSpinner from './ScaleUpSpinner.vue'
 
-
 export default {
     install (Vue) {
         Vue.component('BreathingSpinner', BreathingSpinner)

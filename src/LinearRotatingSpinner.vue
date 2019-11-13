@@ -27,10 +27,6 @@ export default {
         type:String,
         default:'rgba(255, 255, 255, 0.0)'
     },
-    opacity:{
-        type:Number,
-        default: 0.8,
-    },
     width:{
         type:String,
         default:'50px'
@@ -44,7 +40,6 @@ export default {
       },
       spinnerContainer(){
           return{
-              opacity:this.opacity,
               backgroundColor:this.overlay
           }
       },
