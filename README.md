@@ -25,8 +25,8 @@ export default{
 ## props
 
 props name  | type | default | description
-------------| ------------- | ------------
-src  | string (required) | - | your image location, you can use image url, or use js require
+------------ | ------------ | ------------ | ------------
+src  | string (required) | none | your image location, you can use image url, or use js require
 top  | string | 50% | margin top, you can use % or px
 overlay  | string | 'rgba(255, 255, 255, 0.0)'(no overlay) | overlay color, use rgba for transparent overlay
 width  | string | 50px | your image size
