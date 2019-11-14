@@ -22,6 +22,13 @@ export default{
 <RotatingSpinner :src="require(`@/assets/logo.png`)"/>
 ````
 
+## Spinner type
+
+RotatingSpinner
+ScaleUpSpinner
+LinearRotatingSpinner
+BreathingSpinner
+
 ## props
 
 props name  | type | default | description
