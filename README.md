@@ -24,10 +24,10 @@ export default{
 
 ## Spinner type
 
-RotatingSpinner
-ScaleUpSpinner
-LinearRotatingSpinner
-BreathingSpinner
+- RotatingSpinner
+- ScaleUpSpinner
+- LinearRotatingSpinner
+- BreathingSpinner
 
 ## props
 
