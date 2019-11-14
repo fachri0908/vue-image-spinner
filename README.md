@@ -28,6 +28,7 @@ export default{
 - ScaleUpSpinner
 - LinearRotatingSpinner
 - BreathingSpinner
+- JumpingSpinner
 
 ## props
 
