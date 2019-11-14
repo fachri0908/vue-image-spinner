@@ -5,7 +5,7 @@
                 <img
                     class="image breathing"
                     :style="imageStyles()"
-                    :src="src">
+                    :src="require(`${src}`)">
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: require(`@/assets/logo.png`)
+      default: '@/assets/logo.png'
     },
     top:{
         type:String,
