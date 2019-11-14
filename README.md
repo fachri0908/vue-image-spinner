@@ -5,7 +5,7 @@ vue-image-spinner is simple javascript package made with vue js that allows you 
 ```
 yarn add vue-image-spinner or npm i vue-image-spinner
 ```
-##usage
+## usage
 ### script
 ````
 import {RotatingSpinner} from 'vue-image-spinner'
