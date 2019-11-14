@@ -5,7 +5,7 @@
                 <img
                     class="image scale-up"
                     :style="imageStyles()"
-                    :src="require(`${src}`)">
+                    :src="src">
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: '@/assets/logo.png'
+      required:true,
     },
     top:{
         type:String,
