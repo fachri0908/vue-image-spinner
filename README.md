@@ -38,3 +38,6 @@ src  | string (required) | none | your image location, you can use image url, or
 top  | string | 50% | margin top, you can use % or px
 overlay  | string | 'rgba(255, 255, 255, 0.0)'(no overlay) | overlay color, use rgba for transparent overlay
 width  | string | 50px | your image size
+
+### links
+[demo](https://fachri0908.github.io/) | [npm](https://www.npmjs.com/package/vue-image-spinner)
