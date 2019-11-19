@@ -40,4 +40,4 @@ overlay  | string | 'rgba(255, 255, 255, 0.0)'(no overlay) | overlay color, use 
 width  | string | 50px | your image size
 
 ### links
-[demo](http://vue-image-spinner.projects.vuete.com/) | [npm](https://www.npmjs.com/package/vue-image-spinner)
+[npm](https://www.npmjs.com/package/vue-image-spinner)
